@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js1</title>
+</head>
+<body>
+    <input id="first-number" type="number" value="" placeholder="第一个数字">
+    <input id="second-number" type="number" value="" placeholder="第二个数字">
+    <button id="add-btn" onclick="add()">加</button>
+    <button id="minus-btn" onclick="minus()">减</button>
+    <button id="times-btn" onclick="times()">乘</button>
+    <button id="divide-btn" onclick="divide()">除</button>
+    <p id="result">运算结果</p>
+    <script>
+       // 1.first.value 和 直接在后面加value
+       // 2.两个数运算，要先转换成Number()
+        re = document.getElementById("result");
+        first = document.getElementById("first-number");
+        second = document.getElementById("second-number");
+       function add() {
+           re.innerHTML = Number(first.value) + Number(second.value);
+       }
+       function minus() {
+           re.innerHTML = Number(first.value) - Number(second.value);
+       }
+       function times() {
+           re.innerHTML = Number(first.value) * Number(second.value);
+       }
+       function divide() {
+           re.innerHTML = Number(first.value) / Number(second.value);
+       }
+    </script>
+</body>
+</html>
